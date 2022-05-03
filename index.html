@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!------CSS------>
+        <link rel="stylesheet" href="./css/styles.css">
+        <!------JS------>
+        <script src="./js/index.js" defer></script>
+        <title>Calculadora IMC</title>
+    </head>
+    
+    <body>
+    
+            <h1>Calculadora de IMC - Índice de Massa Corporal</h1>    
+        
+            <div class="container">
+                <div class="iniciarCalculo">
+                    <h2>Clique no botão para iniciar o cálculo do IMC</h2>
+                    <button onclick="go(1,2)">Iniciar</button>
+                </div>
+                <div class="calculoIMC">
+                    <h3>Calculadora IMC</h3>
+                    <hr><br>
+                    <label for="peso">Digite seu Peso:</label>
+                    <input type="number" placeholder="Seu peso é...." id="peso"></input>
+                    <br><br>
+                    <label for="altura">Digite sua altura:</label>
+                    <input type="number" placeholder="Sua altura é...." id="altura"></input>
+                    <br><br>
+                    <button onclick="validacaoCalculo()">Calcular IMC</button>
+                </div>
+                <div class="resultadoIMC">
+                    <br>
+                    <h3>Resultado!</h3>
+                    <br><br>
+                    <p id="resultado"></p>
+                    <br>
+                    <h3>Índice de Massa Corporal - IMC</h3>
+                    <br>
+                    <p id="IMC"></p>
+                    <button onclick="go(3,2)">Calcular Novamente</button>
+                    <button onclick="go(3,1)">Finalizar</button>
+                </div>
+            </div>
+        
+        <footer>
+            <p>Projeto de Calculadora IMC desenvolvido por <span class="detail">Matheus Marques de Oliveira Neves</span></p>
+        </footer>
+    </body>
+</html>

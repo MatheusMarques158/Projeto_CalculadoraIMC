@@ -1,0 +1,110 @@
+/* ===Global */
+
+:root{ 
+    --white: #fff;
+    --black: rgb(0, 0, 0);
+    --yellow: rgb(199, 176, 46);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background:linear-gradient(to right, rgba(247, 30, 30, 0.719),rgb(0, 155, 39));
+    text-align: center;
+    color:var(--white);
+}
+
+.container{
+    margin-top: 15%;
+    margin-right: auto;
+    margin-left: auto;
+    color: var(--white);
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.container .iniciarCalculo button{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.container .iniciarCalculo button:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.calculoIMC, .resultadoIMC {
+    display: none;
+}
+
+.calculoIMC input {
+    padding: 8px;
+    border-radius: 5px;
+    width: 40%;
+    border: none;
+    outline: none;
+    margin-top: 5%;
+}
+
+.container .calculoIMC button {
+    margin-top: 8%;
+    margin-bottom: 2%;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.container .calculoIMC button:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.container .resultadoIMC button{
+    margin-top: 8%;
+    margin-bottom: 2%;
+    background-color: var(--yellow);
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.container .resultadoIMC button:hover{
+    background-color: var(--black);
+    color: var(--yellow);
+}
+
+.container .resultadoIMC h3{
+    font-size: 30px;
+}
+
+.container .resultadoIMC p{
+    font-size: 25px;
+}
+
+footer p{
+    margin-top: 120px;
+}
+
+.detail{
+    margin-top: 5px;
+    font: 500;
+    display: inline;
+}
